@@ -1,0 +1,88 @@
+/* mit css icon stylen */
+.fa{
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px gray;
+    color: black;
+    /* display: block; */
+}
+/* .fa-github{
+    color: gray;
+}
+.fa-linkedin{
+    color: aqua;
+}
+.fa-instagram{
+    color: coral;
+} */
+
+/* mit Transition einen Button gestalten */
+.first-section-btn{
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #b97296;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(173, 173, 173);
+
+    /* Effekt wenn man  mit der Maus darüber fährt */
+    transition: background-color .5s ease;
+}
+.first-section-btn:hover{
+    background-color: #8d4167;
+}
+
+/* Animation */
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: #8d4167;
+    margin: 50px;
+    position: relative;
+    animation: moveRight 2s ;
+}
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 400px
+    }
+    80% {
+        left: 200px;
+    }
+    100%{
+        left: 0
+    }
+}
+
+div.stern {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ffc800;
+    position: relative;
+  }
+  
+  div.stern:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #ffc800;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+  }
+
+  /* bilder mit Transition stylen */
+
+  img{
+    width: 200px;
+    transition: transform .3s ease;
+  }
+  img:hover{
+    transform: scale(1.2);
+  }
